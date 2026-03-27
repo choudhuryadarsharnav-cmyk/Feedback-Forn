@@ -1,0 +1,84 @@
+body {
+    background: #5a3e2b;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+/* Container animation */
+.container {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    animation: fadeUp 1s ease;
+}
+
+/* Scroll animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 100px;
+}
+
+input, textarea, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Stars */
+.stars span {
+    font-size: 25px;
+    cursor: pointer;
+    color: gray;
+    transition: 0.3s;
+}
+
+.stars span.active {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/* Buttons */
+.options button {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.green { background: green; }
+.red { background: red; }
+.yellow { background: goldenrod; }
+
+/* Submit */
+.submit {
+    margin-top: 15px;
+    padding: 10px;
+    width: 95%;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Success */
+#success {
+    margin-top: 15px;
+    font-size: 18px;
+    color: lightgreen;
+}

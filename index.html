@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ମତାମତ ଫର୍ମ | Feedback Form</title>
+
+    <link rel="stylesheet" href="decoration.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+<div class="container animate__animated animate__fadeIn">
+
+    <img src="logo.png" class="logo">
+
+    <h1>ମତାମତ ଫର୍ମ</h1>
+    <h3>Feedback Form</h3>
+
+    <p>
+    ଆପଣଙ୍କ ମତାମତ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ... <br>
+    Your feedback is important and helps improve content and experience.
+    </p>
+
+    <!-- Name -->
+    <label>ଆପଣଙ୍କ ନାମ / Your Name</label>
+    <input type="text" id="name">
+
+    <!-- Rating -->
+    <label>ୱେବସାଇଟ୍ ମୂଲ୍ୟାଙ୍କନ / Rate Website</label>
+    <div class="stars" id="stars"></div>
+
+    <!-- Improvement -->
+    <label>ଉନ୍ନତି ପାଇଁ ପ୍ରସ୍ତାବ / Suggestions</label>
+    <textarea id="suggestion"></textarea>
+
+    <!-- Recommendation -->
+    <label>ସୁପାରିଶ କରିବେ? / Recommend?</label>
+    <div class="options">
+        <button class="green" onclick="selectOption(this)">ସ୍ପଷ୍ଟ ଭାବରେ ହଁ</button>
+        <button class="yellow" onclick="selectOption(this)">ସମ୍ଭବ ହୋଇପାରେ</button>
+        <button class="red" onclick="selectOption(this)">ନିଶ୍ଚିତ ଭାବରେ ନୁହେଁ</button>
+    </div>
+
+    <!-- Emotion -->
+    <label>ଭାବନା / Feelings</label>
+    <select id="emotion">
+        <option>ପ୍ରେରଣାପ୍ରାପ୍ତ (Inspired)</option>
+        <option>ଚିନ୍ତାଶୀଳ (Thoughtful)</option>
+        <option>ଜିଜ୍ଞାସୁ (Curious)</option>
+        <option>ପ୍ରେରଣାଦାୟକ (Motivated)</option>
+        <option>ନିରପେକ୍ଷ (Neutral)</option>
+        <option>ଅନ୍ୟାନ୍ୟ (Other)</option>
+    </select>
+
+    <!-- Privacy -->
+    <p class="privacy">
+    ଆପଣଙ୍କ ମତାମତ ଗୋପନୀୟ ରହିବ।<br>
+    Your feedback will remain confidential.
+    </p>
+
+    <button class="submit" onclick="submitForm()">Submit</button>
+
+    <div id="success"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
